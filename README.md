@@ -5,3 +5,4 @@ The Car Rental System is a software application designed to facilitate the renta
 
 
 # UI and Logic Planning
+[Class Diagram]! ()
