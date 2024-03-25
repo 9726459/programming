@@ -5,4 +5,4 @@ The Car Rental System is a software application designed to facilitate the renta
 
 
 # UI and Logic Planning
-[Class Diagram!(https://github.com/9726459/programming/blob/main/images/Diagram.png?raw=true)]
+[Class Diagram!](https://github.com/9726459/programming/blob/main/images/Diagram.png?raw=true)
