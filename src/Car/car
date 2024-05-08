@@ -1,0 +1,46 @@
+# car.py
+class Car:
+    def __init__(self, make, model, year, color):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+
+# customer.py
+class Customer:
+    def __init__(self, name, email, phone):
+        self.name = name
+        self.email = email
+        self.phone = phone
+
+# rental.py
+class Rental:
+    def __init__(self, car, customer, start_date, end_date):
+        self.car = car
+        self.customer = customer
+        self.start_date = start_date
+        self.end_date = end_date
+
+# main.py
+from car import Car
+from customer import Customer
+from rental import Rental
+
+def main():
+    # Create a car object
+    car = Car("Toyota", "Camry", 2020, "Blue")
+
+    # Create a customer object
+    customer = Customer("John Doe", "john@example.com", "123-456-7890")
+
+    # Perform a rental transaction
+    rental = Rental(car, customer, "2024-04-15", "2024-04-20")
+
+    # Display rental information
+    print("Rental Information:")
+    print("Car: {} {} {} ({})".format(car.year, car.make, car.model, car.color))
+    print("Customer: {} ({}, {})".format(customer.name, customer.email, customer.phone))
+    print("Rental Period: {} to {}".format(rental.start_date, rental.end_date))
+
+if __name__ == "__main__":
+    main()

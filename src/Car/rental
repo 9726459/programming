@@ -1,0 +1,27 @@
+# Rental class represents a rental transaction
+class Rental:
+    def __init__(self, id, car, start_date, end_date, customer):
+        self.id = id
+        self.car = car
+        self.start_date = start_date
+        self.end_date = end_date
+        self.customer = customer
+
+# Example usage:
+if __name__ == "__main__":
+    # Create car object
+    car1 = Car(id=1, make="Toyota", model="Camry", year=2020, color="Red", mileage=5000, available=True)
+
+    # Create user object
+    user1 = User(id=1, name="John Doe", email="john@example.com", phone="123-456-7890")
+
+    # Create rental object
+    rental1 = Rental(id=1, car=car1, start_date=date(2024, 3, 1), end_date=date(2024, 3, 7), customer=user1)
+
+    # Print rental details
+    print("Rental Details:")
+    print("ID:", rental1.id)
+    print("Car:", rental1.car.make, rental1.car.model)
+    print("Start Date:", rental1.start_date)
+    print("End Date:", rental1.end_date)
+    print("Customer:", rental1.customer.name)
